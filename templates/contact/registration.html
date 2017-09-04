@@ -1,0 +1,17 @@
+{% extends "contact/base.html" %}
+{% load bootstrap3 %}
+{% block content %}
+
+<h1>Register Here By filling up the form</h1>
+
+
+  <form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+  {% bootstrap_button "Register" button_type="submit" button_class="btn-primary md" %}
+  </form>
+
+
+
+
+{% endblock %}
